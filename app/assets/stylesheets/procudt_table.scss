@@ -6,6 +6,13 @@
   text-align: center;
   border: 2px solid black;
 
+  th {
+    background: lightslategrey;
+  }
+  td {
+    background: lightcyan;
+  }
+
   th:nth-child(1){
     width: 40%;
   }
@@ -21,4 +28,5 @@
   th, td {
     border: 1px solid black;
   }
+
 }
