@@ -10,15 +10,15 @@
 <% end %>
 
 <h2>Products</h2>
-<table>
-  <tr>
+<table id="product_table">
+  <tr id="table_header_row">
     <th>Product</th>
     <th>SKU</th>
     <th>Price (USD)</th>
     <th>Price (EURO)</th>
   </tr>
   <% @products.each do |product| %>
-    <tr>
+    <tr class="product_details">
       <td><%= link_to product.title, "https://#{@shop_session.url}/admin/products/#{product.id}", target: "_top" %></td>
       <td><%= product.variants[0].sku %></td>
       <td><%= product.variants[0].price %></td>
