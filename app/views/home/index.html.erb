@@ -21,8 +21,8 @@
     <tr class="product_details">
       <td><%= link_to product.title, "https://#{@shop_session.url}/admin/products/#{product.id}", target: "_top" %></td>
       <td><%= product.variants[0].sku %></td>
-      <td><%= product.variants[0].price %></td>
-      <td><%= '%.2f' % (product.variants[0].price.to_i + 20) %></td>
+      <td>$<%= product.variants[0].price %></td>
+      <td>&euro;<%= '%.2f' % (product.variants[0].price.to_i + 20) %></td>
     </tr>
   <% end %>
 </table>
