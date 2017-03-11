@@ -22,6 +22,7 @@
       <td><%= product.variants[0].sku %></td>
       <td><%= link_to product.title, "https://#{@shop_session.url}/admin/products/#{product.id}", target: "_top" %></td>
       <td><%= product.variants[0].price %></td>
+      <td><%= product.variants[0].price.class %></td>
     </tr>
   <% end %>
 </table>
