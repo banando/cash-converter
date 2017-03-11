@@ -10,9 +10,9 @@ ruby '2.2.6'
 
 * System dependencies
 gems: 
-    -'dotenv-rails'
-    -'shopify_app'
-    -'activeresource', github: 'rails/activeresource'
+    - 'dotenv-rails'
+    - 'shopify_app'
+    - 'activeresource', github: 'rails/activeresource'
 
 
 * Database initialization
