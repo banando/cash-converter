@@ -11,9 +11,12 @@
 
 <h2>Products</h2>
 
-<ul>
-  <% @products.each do |product| %>
-    <li><%= link_to product.title, "https://#{@shop_session.url}/admin/products/#{product.id}", target: "_top" %></li>
-    <li><%= product.variants %></li>
-  <% end %>
-</ul>
+<table>
+  <tr>
+
+    <% @products.each do |product| %>
+      <td><%= link_to product.title, "https://#{@shop_session.url}/admin/products/#{product.id}", target: "_top" %></td>
+      <td><%= product.variants %></td>
+    <% end %>
+  </tr>
+</table>
