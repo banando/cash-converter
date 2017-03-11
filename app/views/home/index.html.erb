@@ -12,15 +12,15 @@
 <h2>Products</h2>
 <table>
   <tr>
-    <th>SKU</th>
     <th>Product</th>
+    <th>SKU</th>
     <th>Price (USD)</th>
     <th>Price (EURO)</th>
   </tr>
   <% @products.each do |product| %>
     <tr>
-      <td><%= product.variants[0].sku %></td>
       <td><%= link_to product.title, "https://#{@shop_session.url}/admin/products/#{product.id}", target: "_top" %></td>
+      <td><%= product.variants[0].sku %></td>
       <td><%= product.variants[0].price %></td>
       <td><%= '%.2f' % (product.variants[0].price.to_i + 20) %></td>
     </tr>
