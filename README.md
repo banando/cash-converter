@@ -19,10 +19,8 @@ gems:
 Use postgres to match heroku
 
 * Deployment instructions
-
-* ...
-1. Clone repository
-2. Navigaet to cash-converter
-3. run ```bundle install``` in terminal
-4. run ```rails db:create```
-5. run ```rails db:migrate```
+    1. Clone repository
+    2. Navigaet to cash-converter
+    3. run ```bundle install``` in terminal
+    4. run ```rails db:create```
+    5. run ```rails db:migrate```
